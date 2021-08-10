@@ -1,0 +1,7 @@
+<h1>Editing Staff</h1><br>
+
+<%= render 'form', staff: @staff %>
+<br>
+<%= link_to 'Show', @staff, class:'btn btn-dark' %> 
+<%= link_to 'Delete', @staff, method: :delete, data: { confirm: 'Are you sure?'}, class:'btn btn-danger ' %>
+<%= link_to 'Back', staffs_path, class:'btn btn-dark' %>

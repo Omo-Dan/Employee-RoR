@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= @staff.firs_name %>
+     <%= @staff.last_name %>
+  </h1>
+
+  <p class="lead"><%= @staff.email %> |
+                  <%= @staff.phone %> |
+                  <%= @staff.twitter %>
+    
+  </p> <br>
+
+ <%= link_to 'Edit', edit_staff_path(@staff), class:'btn btn-secondary' %> 
+<%= link_to 'Delete', @staff, method: :delete, data: { confirm: 'Are you sure?'}, class:'btn btn-danger ' %>
+ 
+<%= link_to 'Back', staffs_path, class:'btn btn-dark' %>
+</div>
+
